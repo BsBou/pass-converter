@@ -48,7 +48,7 @@ The following table shows the mapping of pass types between each supported walle
 node app.js demo
 ```
 
-Provides a demo web page to test converting passes, which runs on [http://localhost:3000](http://localhost:3000) by default.
+Provides a demo web page to test converting passes, which runs on [http://localhost:4200](http://localhost:4200) by default.
 
 ### Run via the command line
 
@@ -149,7 +149,7 @@ The following variables are defined in the `config.js` file. Most of these are c
 | `defaultLanguage`              | The default language to use in Google Wallet passes (`PKPass` files with translations do not define the default language)                        | `en`                                                |
 | `authHeader`                   | The HTTP header name your upstream web server will send to the converter when requests are authenticated (see [Authentication](#authentication)) | `Authorization`                                     |
 | `bindHost`                     | The HTTP host to bind the converter to when running as a web service                                                                             | `127.0.0.1`                                         |
-| `bindPort`                     | The HTTP port to bind the converter to when running as a web service                                                                             | `3000`                                              |
+| `bindPort`                     | The HTTP port to bind the converter to when running as a web service                                                                             | `4200`                                              |
 | `apn`                          | Config for Apple Push Notifications (see [node-apn documentation](https://github.com/node-apn/node-apn/blob/master/doc/provider.markdown))       | `{"cert": "cert.pem", "key": "key.pem"}`            |
 | `database`                     | Config for database, (see [typeorm documentation](https://typeorm.io/data-source-options))                                                       | `{"type": "sqlite", "database": "database.sqlite"}` |
 | `hints`                        | (Mapping of field name hints, see [Hints for Google passes](#hints-for-google-passes))                                                           | `{"event.name": ""}`                                |
